@@ -1,3 +1,5 @@
 Guessing Game Project
+
 29072020
-12 guessinggame.sh
+
+Total number of lines: 24
