@@ -1,18 +1,16 @@
 function guess {
   echo "Guess the number of files in this directory"
+  ans=$(ls | wc -l)
   read input
-  local ans=$(ls | wc -l)
 
   if [[ $input > $ans ]]
   then
-    echo "Wrong guess! Try a lower number"
-    echo
+    echo "Wrong! Try a lower number"
   elif [[ $input < $ans ]]
   then
-    echo "Wrong guess! Try a larger number"
-    echo
+    echo "Wrong! Try a larger number"
   else
-    echo "Correct! The answer is $ans"
+    echo "Correct!"
     let guessing=false
   fi
 }
