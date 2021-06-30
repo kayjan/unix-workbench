@@ -1,4 +1,4 @@
-function guess {
+function guessinggame {
   echo "Guess the number of files in this directory"
   ans=$(ls | wc -l)
   read input
@@ -10,13 +10,13 @@ function guess {
   then
     echo "Wrong! Try a larger number"
   else
-    echo "Correct!"
-    let guessing=false
+    echo "Correct! Congrats!"
+    let correct=true
   fi
 }
 
-guessing=true
-while [[ $guessing == true ]]
+correct=false
+while [[ $correct == false ]]
 do
-  guess
+  guessinggame
 done

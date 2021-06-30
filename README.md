@@ -1,5 +1,5 @@
-Guessing Game Project
+Guessing Game
 
-29072020
+30062021
 
-Total number of lines: 24
+Number of lines of code: 22
