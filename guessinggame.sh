@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function guessinggame() {
   ans=$(ls | wc -l)
   correct=false
@@ -8,10 +10,10 @@ function guessinggame() {
 	read input
 	if [ $input -gt $ans ]
 	then
-		echo "Wrong! Try a lower number!"
+		echo "Too high, try a lower number!"
 	elif [ $input -lt $ans ]
 	then
-		echo "Wrong! Try a larger number!"
+		echo "Too low, try a higher number!"
 	else
 		echo "Correct!!"
 		let correct=true
