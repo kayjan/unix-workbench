@@ -8,12 +8,12 @@ function guessinggame() {
 	read input
 	if [ $input -gt $ans ]
 	then
-		echo "Wrong! Try a lower number"
+		echo "Wrong! Try a lower number!"
 	elif [ $input -lt $ans ]
 	then
-		echo "Wrong! Try a larger number"
+		echo "Wrong! Try a larger number!"
 	else
-		echo "Correct! Congrats!"
+		echo "Correct!!"
 		let correct=true
 	fi
   done
