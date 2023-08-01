@@ -1,12 +1,10 @@
 all: title date num_lines
 
 title:
-	echo "Guessing Game" > README.md
-	echo "" >> README.md
+	echo -e "Guessing Game\r\n" > README.md
 
 date:
-	echo `date +%d%m%Y` >> README.md
-	echo "" >> README.md
+	echo -e "`date +%d%m%Y`\r\n" >> README.md
 
 num_lines:
 	echo "Number of lines of code: $(shell < guessinggame.sh wc -l)" >> README.md
